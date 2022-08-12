@@ -1,6 +1,12 @@
 # Beginner Data Engineering Project - Stream Version
 
-This is the repo for the blog at [Data Engineering Project: Stream Edition](https://www.startdataengineering.com/post/data-engineering-project-for-beginners-stream-edition/)
+My implementation of blog at [Data Engineering Project: Stream Edition](https://www.startdataengineering.com/post/data-engineering-project-for-beginners-stream-edition/)
+
+## Learning Outcomes:
+
+- Implementation of Kafka Consumer / Producer
+- JDBC implementation
+- Kafka connector for Flink
 
 ## Prerequisites
 
