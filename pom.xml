@@ -47,7 +47,7 @@ under the License.
 		<flink.version>1.12-SNAPSHOT</flink.version>
 		<scala.binary.version>2.11</scala.binary.version>
 		<scala.version>2.11.12</scala.version>
-		<log4j.version>2.12.1</log4j.version>
+		<log4j.version>2.17.2</log4j.version>
 	</properties>
 
 	<dependencies>
@@ -119,7 +119,7 @@ under the License.
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
-			<version>42.2.16</version>
+			<version>42.3.5</version>
 		</dependency>
 
 

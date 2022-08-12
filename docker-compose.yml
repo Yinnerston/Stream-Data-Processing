@@ -7,8 +7,8 @@ services:
       - 8081:8081
     volumes:
       - ./conf:/opt/flink/conf
-      - flink-checkpoints-directory:/tmp/flink-checkpoints-directory
-      - /tmp/flink-savepoints-directory:/tmp/flink-savepoints-directory
+      # - flink-checkpoints-directory:/tmp/flink-checkpoints-directory
+      # - /tmp/flink-savepoints-directory:/tmp/flink-savepoints-directory
     environment:
       - JOB_MANAGER_RPC_ADDRESS=jobmanager
   taskmanager:
@@ -18,8 +18,8 @@ services:
     command: "taskmanager.sh start-foreground"
     volumes:
       - ./conf:/opt/flink/conf
-      - flink-checkpoints-directory:/tmp/flink-checkpoints-directory
-      - /tmp/flink-savepoints-directory:/tmp/flink-savepoints-directory
+      # - flink-checkpoints-directory:/tmp/flink-checkpoints-directory
+      # - /tmp/flink-savepoints-directory:/tmp/flink-savepoints-directory
     environment:
       - JOB_MANAGER_RPC_ADDRESS=jobmanager
   zookeeper:
@@ -41,6 +41,7 @@ services:
       - "5432:5432"
     environment:
       POSTGRES_DB: "events"
+      # TODO: change this from being hardcoded in
       POSTGRES_USER: "startdataengineer"
       POSTGRES_PASSWORD: "password"
     volumes:
