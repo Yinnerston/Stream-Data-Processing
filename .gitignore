@@ -1,0 +1,6 @@
+*.class
+*.log
+*.properties
+
+*TODO.md
+target/
